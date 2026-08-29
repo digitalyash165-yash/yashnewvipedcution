@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>VIP</title>
+<title>Trade With Munaaf</title>
 
-<!-- Meta Pixel -->
+<!-- META PIXEL -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -22,8 +22,12 @@ fbq('track','PageView');
 </script>
 
 <noscript>
-<img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=26727728282882&ev=PageView&noscript=1">
+<img
+height="1"
+width="1"
+style="display:none"
+src="https://www.facebook.com/tr?id=26727728282882&ev=PageView&noscript=1"
+/>
 </noscript>
 
 <style>
@@ -34,16 +38,24 @@ src="https://www.facebook.com/tr?id=26727728282882&ev=PageView&noscript=1">
     box-sizing:border-box;
 }
 
-body{
+html,body{
+    width:100%;
+    min-height:100%;
     background:#000;
-    color:white;
+    color:#fff;
     font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+    display:flex;
+    justify-content:center;
 }
 
 .main{
     width:100%;
-    max-width:760px;
-    margin:0 auto;
+    max-width:828px;
+    min-height:100vh;
+    background:#000;
     padding:175px 64px 150px;
 }
 
@@ -119,6 +131,7 @@ body{
     font-weight:bold;
     background:linear-gradient(100deg,#0bc9f0,#8740ff);
     box-shadow:0 8px 25px rgba(0,200,255,.25);
+    cursor:pointer;
 }
 
 .quote{
@@ -130,20 +143,28 @@ body{
 }
 
 .ad{
+    width:100%;
+    min-height:65px;
     border:2px solid #004b61;
     border-radius:22px;
-    min-height:65px;
     display:flex;
     align-items:center;
     justify-content:center;
     text-align:center;
     color:#999;
     font-size:18px;
+    text-decoration:none;
+    cursor:pointer;
+    transition:.2s;
 }
 
 .ad strong{
     color:#08d9ff;
     margin-left:6px;
+}
+
+.ad:hover{
+    border-color:#08d9ff;
 }
 
 .footer{
@@ -152,6 +173,10 @@ body{
     font-size:15px;
     line-height:1.7;
     margin-top:25px;
+}
+
+.footer .links{
+    margin-bottom:3px;
 }
 
 @media(max-width:600px){
@@ -204,6 +229,7 @@ body{
 
     .ad{
         font-size:14px;
+        min-height:58px;
     }
 
     .footer{
@@ -220,14 +246,17 @@ body{
 
 <div class="box">
 
+<!-- PROFILE PHOTO -->
 <div class="photo">
-<img src="profile.jpg" alt="VIP">
+<img src="profile.jpg" alt="Trade With Munaaf">
 </div>
 
+<!-- TITLE -->
 <div class="title">
-Nikhil Gohdke patil (VIP trader)❤️
-
+TRADE WITH MUNAAF
 </div>
+
+<!-- FEATURES -->
 
 <div class="row">
 <div class="emoji">🌐</div>
@@ -249,34 +278,60 @@ Nikhil Gohdke patil (VIP trader)❤️
 <div>Educational Case Discussions</div>
 </div>
 
+<!-- DESCRIPTION -->
+
 <div class="description">
 Join our learning community and grow your knowledge
 </div>
 
+<!-- TELEGRAM BUTTON -->
+
 <a
 class="telegram"
-href="https://t.me/+60VgI7emtM83ZGY9"
+href="https://t.me/+2Z4WItdCidVhYWU1"
 target="_blank"
+rel="noopener"
 onclick="fbq('track','Lead');"
 >
 JOIN TELEGRAM
 </a>
 
-<div class="quote">
+<!-- HINDI TEXT -->
 
+<div class="quote">
+नियत अच्छी और मेहनत सच्ची हो, तो कामयाबी जरूर मिलती<br>
+है।
 </div>
 
-<div class="ad">
+<!-- AD BOX - CLICKABLE -->
+
+<a
+class="ad"
+href="https://t.me/+2Z4WItdCidVhYWU1"
+target="_blank"
+rel="noopener"
+onclick="fbq('track','Lead');"
+>
 This Channel Advertise By
 <strong>YASH</strong>
-</div>
+</a>
+
+<!-- FOOTER -->
 
 <div class="footer">
-Terms | Privacy | Disclaimer<br>
+
+<div class="links">
+Terms | Privacy | Disclaimer
+</div>
+
+<div>
 This site is not part of Facebook™ or endorsed by Facebook™.
 </div>
 
 </div>
+
+</div>
+
 </div>
 
 </body>
