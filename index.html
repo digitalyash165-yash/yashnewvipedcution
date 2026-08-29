@@ -1,135 +1,283 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="viewport"
-      content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Trade With Munaaf</title>
 
-<title>vip</title>
-
-
-<!-- =========================
-     META PIXEL CODE
-========================= -->
-
+<!-- Meta Pixel -->
 <script>
 !function(f,b,e,v,n,t,s)
-{
-    if(f.fbq)return;
-
-    n=f.fbq=function(){
-        n.callMethod ?
-        n.callMethod.apply(n,arguments) :
-        n.queue.push(arguments)
-    };
-
-    if(!f._fbq)f._fbq=n;
-
-    n.push=n;
-    n.loaded=!0;
-    n.version='2.0';
-    n.queue=[];
-
-    t=b.createElement(e);
-    t.async=!0;
-    t.src=v;
-
-    s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)
-}
-(window, document, 'script',
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window,document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
 
-fbq('init', '26727728282882');
-
-fbq('track', 'PageView');
+fbq('init','26727728282882');
+fbq('track','PageView');
 </script>
 
-
 <noscript>
-<img
-height="1"
-width="1"
-style="display:none"
-src="https://www.facebook.com/tr?id=26727728282882&ev=PageView&noscript=1"
-/>
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=26727728282882&ev=PageView&noscript=1">
 </noscript>
-
-
-<!-- END META PIXEL CODE -->
-
 
 <style>
 
 *{
+    margin:0;
+    padding:0;
     box-sizing:border-box;
 }
 
-html,
 body{
-    margin:0;
-    padding:0;
     background:#000;
-    color:#fff;
+    color:white;
     font-family:Arial,Helvetica,sans-serif;
 }
 
-body{
-    min-height:100vh;
-    display:flex;
-    justify-content:center;
+.main{
+    width:100%;
+    max-width:760px;
+    margin:0 auto;
+    padding:175px 64px 150px;
 }
 
-.page{
+.box{
     width:100%;
-    max-width:828px;
-    min-height:100vh;
-    background:#000;
-
-    padding:176px 64px 150px;
-}
-
-
-.card{
-
-    position:relative;
-
-    width:100%;
-
-    min-height:1250px;
-
-    border:2px solid #09d9ff;
-
-    border-radius:64px;
-
     background:#020c10;
-
-    box-shadow:
-    0 0 25px rgba(0,215,255,.12);
-
-    padding:
-    28px
-    28px
-    35px;
+    border:2px solid #08d9ff;
+    border-radius:62px;
+    padding:30px;
+    box-shadow:0 0 30px rgba(0,217,255,.18);
 }
 
-
-/* PROFILE */
-
-.profile-wrap{
-
+.photo{
     width:220px;
     height:220px;
-
-    margin:-1px auto 48px;
-
+    margin:0 auto 48px;
     border-radius:50%;
+    border:6px solid #08d9ff;
+    box-shadow:0 0 30px #08d9ff;
+    overflow:hidden;
+}
 
-    padding:6px;
+.photo img{
+    width:100%;
+    height:100%;
+    display:block;
+    object-fit:cover;
+}
 
-    background:#08d8ff;
+.title{
+    text-align:center;
+    font-size:38px;
+    font-weight:bold;
+    margin-bottom:50px;
+}
 
-    box-shadow:
-    0 0 28px rgba(
+.row{
+    display:flex;
+    align-items:center;
+    gap:22px;
+    min-height:90px;
+    padding:12px 5px;
+    border-bottom:1px solid #18252a;
+    color:#d5d5d5;
+    font-size:24px;
+}
+
+.emoji{
+    font-size:32px;
+    width:40px;
+    text-align:center;
+    flex-shrink:0;
+}
+
+.description{
+    text-align:center;
+    color:#ddd;
+    font-size:21px;
+    line-height:1.4;
+    margin:55px 0 28px;
+}
+
+.telegram{
+    display:block;
+    width:100%;
+    height:100px;
+    line-height:100px;
+    text-align:center;
+    border-radius:60px;
+    text-decoration:none;
+    color:white;
+    font-size:28px;
+    font-weight:bold;
+    background:linear-gradient(100deg,#0bc9f0,#8740ff);
+    box-shadow:0 8px 25px rgba(0,200,255,.25);
+}
+
+.quote{
+    text-align:center;
+    color:#d0d0d0;
+    font-size:22px;
+    line-height:1.5;
+    margin:25px 0 35px;
+}
+
+.ad{
+    border:2px solid #004b61;
+    border-radius:22px;
+    min-height:65px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:#999;
+    font-size:18px;
+}
+
+.ad strong{
+    color:#08d9ff;
+    margin-left:6px;
+}
+
+.footer{
+    text-align:center;
+    color:#555;
+    font-size:15px;
+    line-height:1.7;
+    margin-top:25px;
+}
+
+@media(max-width:600px){
+
+    .main{
+        padding:60px 20px 60px;
+    }
+
+    .box{
+        border-radius:42px;
+        padding:22px 18px 30px;
+    }
+
+    .photo{
+        width:170px;
+        height:170px;
+        margin-bottom:35px;
+    }
+
+    .title{
+        font-size:29px;
+        margin-bottom:35px;
+    }
+
+    .row{
+        font-size:17px;
+        min-height:70px;
+        gap:12px;
+    }
+
+    .emoji{
+        font-size:25px;
+        width:30px;
+    }
+
+    .description{
+        font-size:17px;
+        margin-top:35px;
+    }
+
+    .telegram{
+        height:75px;
+        line-height:75px;
+        font-size:22px;
+    }
+
+    .quote{
+        font-size:17px;
+    }
+
+    .ad{
+        font-size:14px;
+    }
+
+    .footer{
+        font-size:12px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="main">
+
+<div class="box">
+
+<div class="photo">
+<img src="profile.jpg" alt="Trade With Munaaf">
+</div>
+
+<div class="title">
+TRADE WITH MUNAAF
+</div>
+
+<div class="row">
+<div class="emoji">🌐</div>
+<div>Learning &amp; Educational Sessions</div>
+</div>
+
+<div class="row">
+<div class="emoji">📊</div>
+<div>Market Concepts &amp; Awareness</div>
+</div>
+
+<div class="row">
+<div class="emoji">💎</div>
+<div>Chart Reading Concepts</div>
+</div>
+
+<div class="row">
+<div class="emoji">💻</div>
+<div>Educational Case Discussions</div>
+</div>
+
+<div class="description">
+Join our learning community and grow your knowledge
+</div>
+
+<a
+class="telegram"
+href="https://t.me/+2Z4WItdCidVhYWU1"
+target="_blank"
+onclick="fbq('track','Lead');"
+>
+JOIN TELEGRAM
+</a>
+
+<div class="quote">
+नियत अच्छी और मेहनत सच्ची हो, तो कामयाबी जरूर मिलती<br>
+है।
+</div>
+
+<div class="ad">
+This Channel Advertise By
+<strong>AD CRAFT AGENCY</strong>
+</div>
+
+<div class="footer">
+Terms | Privacy | Disclaimer<br>
+This site is not part of Facebook™ or endorsed by Facebook™.
+</div>
+
+</div>
+</div>
+
+</body>
+</html>
